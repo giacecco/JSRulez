@@ -154,7 +154,7 @@ _runAll_ method has been called. If the rules were:
 	action: function () { console.log("Buy a present for someone"); } },
 
 { priority: 1,
-	events: [ "\_", "itsMyBirthday" ],
+	events: [ "_", "itsMyBirthday" ],
 	action: function () { console.log("I can't really miss my birthday. Buy a present for myself"); }, },
 ```
 
