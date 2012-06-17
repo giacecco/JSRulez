@@ -1,5 +1,5 @@
 /* 
- * JSRulez v0.2.0 (17 June 2012)
+ * JSRulez v0.1.1RC 
  * Copyright (C) 2012 Gianfranco Cecconi
  * 
  * MIT LICENCE

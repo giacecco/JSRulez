@@ -1,0 +1,12 @@
+{
+  "name": "JSRulezNodejsExample",
+  "version": "0.0.1",
+  "description": "",
+  "author": "Gianfranco Cecconi <giacecco@giacec.co>",
+  "engines": { "node" : ">=0.6.19" },
+  "dependencies": {
+		"backbone": ">=0.9.2",
+		"requirejs": ">=2.0.2",
+		"underscore": ">=1.3.3"
+  }
+}
