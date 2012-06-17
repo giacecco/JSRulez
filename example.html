@@ -1,0 +1,26 @@
+<!-- An example for web browser-based JavaScript -->
+<html>
+	<head>
+		<script src="http://underscorejs.org/underscore-min.js"></script>
+		<script src="http://backbonejs.org/backbone-min.js"></script>
+		<script src="./JSRulez.js"></script>
+	</head>
+	<body>
+		JSRulez says: 
+		<script>
+			var exampleRules = [
+			                		
+		    { condition: function (context) { return context.lyrics === "sunday"; },
+		      action: function (context) { context.lyrics += " bloody sunday" }, },
+		
+		    { condition: function (context) { return context.lyrics === "obladi"; },
+		      action: function (context) { context.lyrics += " oblada" }, },
+			
+		  ];
+		  var rulesEngine = new JSRulez.RulesEngine(exampleRules),
+		      context = { lyrics: "obladi" };
+		  rulesEngine.runAll(context);
+		  document.write(context.lyrics);
+		</script>
+	</body>
+</html>
