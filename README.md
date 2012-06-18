@@ -6,14 +6,15 @@ in other JavaScript contexts.
 I developed
 JSRulez as I needed a better way to represent the dealer's beaviour in a multiplayer
 Blackjack game I was developing while learning [Meteor](http://www.meteor.com).
-Using conventional programming style I would have had an intricate tree of _if_s
-and _switch_es and loop structures. What I wanted instead is to describe the
+Using conventional programming style I would have had an intricate tree of _if_, _switch_ and loop structures. What I wanted instead is to describe the
 dealer's behaviour by a flat list of rules.
 
 ## Requirements
-[Underscore.js](http://underscorejs.org/) version >= 1.3.3 (available in the
-general JavaScript scope as "\_") and [Backbone.js](http://backbonejs.org/) 
-version >= 0.9.2 (as "Backbone").
+
+* [Underscore.js](http://underscorejs.org/) version >= 1.3.3 (available in the
+general JavaScript scope as "\_") 
+* [Backbone.js](http://backbonejs.org/) version >= 0.9.2 (as "Backbone")
+* [RequireJS](http://requirejs.org/) version >= 2.0.2 
 
 ## Rules
 The rules engine of JSRulez manages business rules that can:
@@ -50,7 +51,7 @@ in particular. Please note that triggers are implemented by extending
 ## Rule properties
 
 ### _priority_
-Easy. See the two rules below:
+Easy. See the rules below:
 
 ```JavaScript
 { priority: 2,
@@ -67,7 +68,7 @@ Easy. See the two rules below:
   action: function () { console.log("Buy a present for myself"); } },
 ```
 
-If you run these two rules using the _runAll_ method the output is:
+If you run these rules using the _runAll_ method the output is:
 
 ```
 Buy a present for myself

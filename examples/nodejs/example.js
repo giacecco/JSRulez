@@ -2,7 +2,7 @@
 
 var requirejs = require('requirejs'); 
 
-requirejs([ "./JSRulez" ], function (JSRulez) {
+requirejs([ "../../JSRulez" ], function (JSRulez) {
 
 	var exampleRules = [
 	                		
